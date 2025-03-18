@@ -218,6 +218,7 @@
     document.getElementById(category).classList.remove("d-none");
   }
 
+  
 
   window.addEventListener('load', navmenuScrollspy);
   document.addEventListener('scroll', navmenuScrollspy);
