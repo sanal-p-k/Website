@@ -29,9 +29,9 @@
 
 </head>
 
-<body class="index-page">
+<body class="starter-page-page">
 
-  <header id="header" class="header d-flex align-items-center fixed-top">
+  <header id="header" class="header d-flex align-items-center position-relative">
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
       <a href="index.html" class="logo d-flex align-items-center me-auto me-lg-0">
@@ -84,7 +84,7 @@
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
-      <a class="btn-getstarted" href="request-service.html">Request Service</a>
+      <a class="btn-getstarted" href="request-service.html">Request Services</a>
 
     </div>
   </header>
@@ -112,72 +112,49 @@
     </div><!-- End Page Title -->
 
    <!-- Request Form -->
-   <section class="request-service">
-    <style>
-        .request-service {
-            background: #111;
-            padding: 40px 20px;
-            border-radius: 10px;
-            width: 800px;
-            text-align: center;
-            color: gold;
-            margin: auto;
-        }
-        .request-service input, .request-service textarea {
-            width: 100%;
-            padding: 10px;
-            margin: 10px 0;
-            border: 1px solid gold;
-            background: #222;
-            color: gold;
-            border-radius: 5px;
-        }
-        .checkbox-group {
-            text-align: left;
-            margin: 10px 0;
-        }
-        .checkbox-group label {
-            display: block;
-        }
-        .request-service button {
-            background: gold;
-            color: black;
-            padding: 10px 20px;
-            border: none;
-            cursor: pointer;
-            width: 100%;
-            border-radius: 5px;
-        }
-        .thank-you {
-            display: none;
-            font-size: 18px;
-            margin-top: 20px;
-        }
-    </style>
-    <form id="requestForm">
-        <input type="text" id="name" placeholder="Full Name *" required>
-        <input type="email" id="email" placeholder="Business Email *" required>
-        <input type="tel" id="phone" placeholder="Phone">
-        <div class="checkbox-group">
-            <label><input type="checkbox" name="service" value="Consultation"> Consultation</label>
-            <label><input type="checkbox" name="service" value="Data Management"> Data Management</label>
-            <label><input type="checkbox" name="service" value="Reporting"> Reporting</label>
-            <label><input type="checkbox" name="service" value="Training"> Training</label>
-        </div>
-        <textarea id="comment" placeholder="Comment"></textarea>
-        <button type="submit">Submit Request</button>
+   <section class="form-section">
+    
+  
+    <form action="process_form.php" method="POST">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" placeholder="Your Full Name" required>
+  
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Your Email" required>
+  
+      <label for="phone">Phone:</label>
+      <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" required>
+  
+      <label>Service Needed:</label>
+      <div class="checkbox-group">
+        <input type="checkbox" id="powerbi" name="service[]" value="Power BI">
+        <label for="powerbi">✅ Power BI</label>
+  
+        <input type="checkbox" id="powerapps" name="service[]" value="Power Apps">
+        <label for="powerapps">✅ Power Apps</label>
+  
+        <input type="checkbox" id="powerautomate" name="service[]" value="Power Automate">
+        <label for="powerautomate">✅ Power Automate</label>
+  
+        <input type="checkbox" id="appsheet" name="service[]" value="AppSheet">
+        <label for="appsheet">✅ AppSheet</label>
+  
+        <input type="checkbox" id="appscript" name="service[]" value="AppScript">
+        <label for="appscript">✅ AppScript</label>
+      </div>
+  
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" placeholder="Briefly describe your requirements..." rows="5" required></textarea>
+  
+      <button type="submit">Submit Request</button>
     </form>
-    <p class="thank-you">Thank you for your request! Redirecting...</p>
-    <script>
-        document.getElementById("requestForm").addEventListener("submit", function(event) {
-            event.preventDefault();
-            document.querySelector(".thank-you").style.display = "block";
-            setTimeout(function() {
-                window.location.href = "index.html";
-            }, 2000);
-        });
-    </script>
-</section>
+  
+    <div class="back-button">
+      <a href="index.html">Back to Home</a>
+    </div>
+  </section>
+  
+  
    <!-- End of Request Form -->
 
   </main>
