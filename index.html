@@ -79,12 +79,12 @@
           
           <li><a href="#team">Team</a></li>
           
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="contact-us.html">Contact</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
-      <a class="btn-getstarted" href="request-service.html">Request Service</a>
+      <a class="btn-getstarted" href="request-service.html">Get Started</a>
 
     </div>
   </header>
@@ -910,152 +910,46 @@
     </section><!-- /Testimonials Section -->
 
     <!-- Team Section -->
-    <section id="team" class="team section">
+    <!-- /Team Section -->
 
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Team</h2>
-        <p>our <span style="color: #FFD700;">Team </span></p>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
-            <div class="team-member">
-              <div class="member-img">
-                <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="">
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter-x"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-              <div class="member-info">
-                <h4>Sanal P K</h4>
-                <span></span>
-              </div>
-            </div>
-          </div><!-- End Team Member -->
-
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
-            <div class="team-member">
-              <div class="member-img">
-                <img src="assets/img/team/team-2.jpg" class="img-fluid" alt="">
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter-x"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-              <div class="member-info">
-                <h4>Haya</h4>
-                <span>Product Manager</span>
-              </div>
-            </div>
-          </div><!-- End Team Member -->
-
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
-            <div class="team-member">
-              <div class="member-img">
-                <img src="assets/img/team/team-3.jpg" class="img-fluid" alt="">
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter-x"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-              <div class="member-info">
-                <h4>Amrithanand</h4>
-                <span>CTO</span>
-              </div>
-            </div>
-          </div><!-- End Team Member -->
-
-
+       <!-- Request Form -->
+       <section class="form-section" style="padding: 60px 20px; background: #f4f4f4; color: #333;">
+        <h2><span>Get In Touch</span></h2>
+    
+        <form id="serviceForm" action="process_form.php" method="POST" onsubmit="showThankYou(event)" style="max-width: 800px; margin: 0 auto; text-align: left;">
+            
+            <label for="name" style="display: block; font-weight: bold; margin-bottom: 8px;">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Your Full Name" required 
+                   style="width: 100%; padding: 10px; margin-bottom: 20px; border: 1px solid #ccc; border-radius: 4px;">
+    
+            <label for="email" style="display: block; font-weight: bold; margin-bottom: 8px;">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Your Email" required
+                   style="width: 100%; padding: 10px; margin-bottom: 20px; border: 1px solid #ccc; border-radius: 4px;">
+    
+            <label for="phone" style="display: block; font-weight: bold; margin-bottom: 8px;">Phone:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" required
+                   style="width: 100%; padding: 10px; margin-bottom: 20px; border: 1px solid #ccc; border-radius: 4px;">
+    
+            <label for="message" style="display: block; font-weight: bold; margin-bottom: 8px;">Message:</label>
+            <textarea id="message" name="message" placeholder="Briefly describe your requirements..." rows="5"
+                      style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; margin-bottom: 20px;"></textarea>
+    
+            <button type="submit" 
+                    style="background: #FFD700; color: #333; padding: 12px 30px; border: none; border-radius: 4px; cursor: pointer; font-size: 18px;">
+                Submit Request
+            </button>
+        </form>
+    
+        <div id="thankYouMessage" class="thank-you" style="display: none; text-align: center; margin-top: 40px;">
+            <h2>Thank You! 🎉</h2>
+            <p>Your service request has been submitted successfully.</p>
+            <p>You will be redirected to the home page shortly...</p>
         </div>
+    
+    </section>
+    
 
-      </div>
-
-    </section><!-- /Team Section -->
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Contact</h2>
-        <p>Contact <span style="color: #FFD700;">Us </span></p>
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-
-        <div class="row gy-4">
-
-          <div class="col-lg-4">
-
-            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
-              <i class="bi bi-telephone flex-shrink-0"></i>
-              <div>
-                <h3>Call Us</h3>
-                <p><a href="tel:+919497684728">+91 9497684728</a></p>
-              </div>
-            </div>
-            <!-- End Info Item -->
-
-            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="500">
-              <i class="bi bi-envelope flex-shrink-0"></i>
-              <div>
-                <h3>Email Us</h3>
-                <p><a href="mailto:sales@whatthedata.onmicrosoft.com">sales@whatthedata.onmicrosoft.com</a></p>
-              </div>
-            </div><!-- End Info Item -->
-
-          </div>
-
-          <div class="col-lg-8">
-            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
-              <div class="row gy-4">
-
-                <div class="col-md-6">
-                  <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
-                </div>
-
-                <div class="col-md-6 ">
-                  <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
-                </div>
-
-                <div class="col-md-12">
-                  <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
-                </div>
-
-                <div class="col-md-12">
-                  <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
-                </div>
-
-                <div class="col-md-12 text-center">
-                  <div class="loading">Loading</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">Your message has been sent. Thank you!</div>
-
-                  <button type="submit">Send Message</button>
-                </div>
-
-              </div>
-            </form>
-          </div><!-- End Contact Form -->
-
-        </div>
-
-      </div>
-
-    </section><!-- /Contact Section -->
-
+  
   </main>
 
   <footer id="footer" class="footer dark-background">
