@@ -39,9 +39,43 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Send the email
     if (mail($to, $subject, $email_content, $headers)) {
-        echo "<script>alert('Your request has been sent successfully!'); window.location.href='index.html';</script>";
+        // Display Thank You message and auto-redirect
+        echo "
+        <html>
+        <head>
+            <meta http-equiv='refresh' content='5;url=index.html'> <!-- Auto redirect after 5 seconds -->
+            <style>
+                body { font-family: Arial, sans-serif; text-align: center; padding: 50px; }
+                h1 { color: #28a745; }
+                p { color: #555; }
+                a { text-decoration: none; color: #007bff; }
+                a:hover { text-decoration: underline; }
+                .container {
+                    max-width: 600px;
+                    margin: 0 auto;
+                    background: #f4f4f4;
+                    padding: 30px;
+                    border-radius: 8px;
+                    box-shadow: 0 0 10px #ccc;
+                }
+            </style>
+        </head>
+        <body>
+            <div class='container'>
+                <h1>Thank You! 🎉</h1>
+                <p>Your service request has been submitted successfully.</p>
+                <p>You will be redirected to the home page shortly...</p>
+                <p>If you are not redirected, <a href='index.html'>click here</a>.</p>
+            </div>
+        </body>
+        </html>
+        ";
     } else {
-        echo "<script>alert('Failed to send the request. Please try again later.'); window.location.href='index.html';</script>";
+        echo "
+        <script>
+            alert('Failed to send the request. Please try again later.');
+            window.location.href = 'index.html';
+        </script>";
     }
 } else {
     // Redirect if accessed directly
