@@ -249,6 +249,7 @@ faqItems.forEach(item => {
 
 
 
+
   window.addEventListener('load', navmenuScrollspy);
   document.addEventListener('scroll', navmenuScrollspy);
 

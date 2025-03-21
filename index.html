@@ -30,6 +30,35 @@
 </head>
 
 <body class="index-page">
+   <!-- Cookie Banner -->
+   <div class="cookie-banner" id="cookie-banner">
+    <p>We use cookies to enhance your browsing experience. By continuing, you agree to our <a href="privacy-policy.html">Privacy Policy</a>.</p>
+    <button id="accept-btn">Accept</button>
+    <button id="reject-btn">Reject</button>
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const banner = document.getElementById("cookie-banner");
+      const acceptBtn = document.getElementById("accept-btn");
+      const rejectBtn = document.getElementById("reject-btn");
+  
+      // Check if cookies are already accepted or rejected
+      if (localStorage.getItem("cookiesAccepted") === "true") {
+        banner.style.display = "none";
+      }
+  
+      acceptBtn.addEventListener("click", () => {
+        localStorage.setItem("cookiesAccepted", "true");
+        banner.style.display = "none";
+      });
+  
+      rejectBtn.addEventListener("click", () => {
+        localStorage.setItem("cookiesAccepted", "false");
+        banner.style.display = "none";
+      });
+    });
+  </script>
 
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
@@ -81,14 +110,13 @@
                 <a href="#"><span>Sales Dashboard</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
                 <ul>
                   <li><a href="dash-sample-sales.html">Sales</a></li>
-                  <li><a href="dash-sample-restail-sales.html">Retail Sales</a></li>
+                  <li><a href="dash-sample-retail-sales.html">Retail Sales</a></li>
                 </ul>
               </li>
               <li><a href="dashboard-sample-hospitality.html">Financial Dashboard</a></li>
             </ul>
           </li>
           
-          <li><a href="#team">Team</a></li>
           
           <li><a href="contact-us.html">Contact</a></li>
         </ul>

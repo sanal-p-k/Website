@@ -2424,3 +2424,54 @@ p {
 }
 
 
+/* Cookie Banner - Black and Gold with White Text */
+.cookie-banner {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #000;       /* Black Background */
+  color: #fff;            /* White Text */
+  padding: 15px 30px;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  width: 80%;
+  max-width: 600px;
+  font-size: 14px;
+}
+
+.cookie-banner a {
+  color: #ffd700;         /* Gold Link */
+  text-decoration: underline;
+}
+
+.cookie-banner button {
+  background: #ffd700;    /* Gold Button */
+  color: #000;            /* Black Text */
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.cookie-banner button:hover {
+  background: #ffcc00;    /* Lighter Gold on Hover */
+  color: #000;            /* Black Text */
+}
+
+.cookie-banner button#reject-btn {
+  background: #333;       /* Dark Grey for Reject */
+  color: #fff;            /* White Text */
+}
+
+.cookie-banner button#reject-btn:hover {
+  background: #555;       /* Lighter Grey on Hover */
+  color: #fff;            /* White Text */
+}
