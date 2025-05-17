@@ -76,63 +76,46 @@
           <li><a href="#about">About</a></li>
           
           <li class="dropdown">
-  <a href="#"><span>Services</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-  <ul>
-    <li><a href="service-details-dashboard.html">Business Intelligence & Dashboards</a></li>
-    <li><a href="service-details-erp.html">Custom ERP Solutions (ERPNext)</a></li>
-    
-    <li class="dropdown">
-      <a href="#"><span>Workflow Automation</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+      <a href="#"><span>Services</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
       <ul>
-        <li><a href="service-details-automation.html">Business Process Automation</a></li>
-        <li><a href="service-details-google_workspace.html">Google Apps Script & Workspace</a></li>
-        <li><a href="service-details-power_automate.html">Microsoft Power Automate</a></li>
+        <li><a href="service-details-dashboard.html">Business Intelligence & Dashboards</a></li>
+        <li><a href="service-details-erp.html">Custom ERP Solutions</a></li>
+        <li><a href="service-details-automation.html">Workflow Automation</a></li>
+        <li><a href="service-details-webapp.html">Application Development</a></li>
+        <li><a href="service-details-webapp.html">Web Development</a></li>
       </ul>
     </li>
 
+              
     <li class="dropdown">
-      <a href="#"><span>Application Development</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+      <a href="#"><span>Portfolio</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
       <ul>
-        <li><a href="service-details-flutter.html">Cross-Platform Mobile Apps (Flutter)</a></li>
-        <li><a href="service-details-power_apps.html">Power Apps</a></li>
-        <li><a href="service-details-appsheet.html">Google AppSheet</a></li>
+        <!-- Dashboards -->
+        <li class="dropdown">
+          <a href="dashboard-view.html"><span>Dashboards</span> <i class=""></i></a>
+        </li>
+
+        <li class="dropdown">
+          <a href="#"><span>Web Development</span> <i class=""></i></a>
+        </li>
+
+        <li class="dropdown">
+          <a href="dashboard-view.html"><span>ERP</span> <i class=""></i></a>
+        </li>
+
+        <!-- Apps -->
+        <li class="dropdown">
+          <a href="#"><span>Apps</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <ul>
+            <li><a href="app-sample-flutter.html">Flutter</a></li>
+            <li><a href="app-sample-powerapps.html">Power Apps</a></li>
+            <li><a href="app-sample-appsheet.html">AppSheet</a></li>
+          </ul>
+        </li>
       </ul>
     </li>
-
-    <li><a href="service-details-web.html">Web Development</a></li>
-  </ul>
-</li>
-
-          
-          <li class="dropdown">
-            <a href="#"><span>Dashboard Samples</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-              <li class="dropdown">
-                <a href="#"><span>HR Dashboards</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                <ul>
-                  <li><a href="dash-sample-HR_analytical.html">HR Analytical</a></li>
-                  <li><a href="dash-sample-HR_recruitment.html">HR Recruitment</a></li>
-                </ul>
-              </li>
-              <li class="dropdown">
-                <a href="#"><span>Hospitality Dashboard</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                <ul>
-                  <li><a href="dash-sample-travel.html">Travel Agency</a></li>
-                </ul>
-              </li>
-              <li class="dropdown">
-                <a href="#"><span>Sales Dashboard</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                <ul>
-                  <li><a href="dash-sample-sales.html">Sales</a></li>
-                  <li><a href="dash-sample-retail-sales.html">Retail Sales</a></li>
-                </ul>
-              </li>
-              <li><a href="dashboard-sample-hospitality.html">Financial Dashboard</a></li>
-            </ul>
-          </li>
-          
-          
-          <li><a href="contact-us.html">Contact</a></li>
+     
+    <li><a href="contact-us.html">Contact</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
@@ -145,22 +128,20 @@
   <main class="main">
 
     <!-- Hero Section -->
-    <!-- Hero Section -->
+    
 <section id="hero" class="hero section dark-background">
-
   <img src="assets/img/hero-bg.jpg" alt="" data-aos="fade-in">
 
   <div class="container">
-
-    <<div class="row justify-content-center text-center" data-aos="fade-up" data-aos-delay="100">
-  <div class="col-xl-8 col-lg-10">
-    <h2 style="color: white;">Turn Complexity Into Clarity with <span>What The Data</span></h2>
-    <p>
-      We help organizations unlock the full value of their data through intelligent dashboards, business automation, and custom software solutions.
-    </p>
-  </div>
-</div>
-
+    <div class="row justify-content-center text-center" data-aos="fade-up" data-aos-delay="100">
+      <div class="col-xl-8 col-lg-10">
+        <h2 style="color: white;">Turn Complexity Into Clarity with <span>What The Data</span></h2>
+        <p>
+          We help organizations unlock the full value of their data through intelligent dashboards, business automation, and custom software solutions.
+        </p>
+      </div>
+    </div>
+<!-- Hero Section -->
 
     <div class="row gy-4 mt-5 justify-content-center" data-aos="fade-up" data-aos-delay="200">
   <div class="col-xl-2 col-md-4" data-aos="fade-up" data-aos-delay="300">
@@ -423,23 +404,21 @@
 
 </head>
 <body>
-
  <h2>Our <span style="color: #FFD700;">Solutions</span></h2>
-
-<div class="category-container">
-    <button class="category-btn active" onclick="showCategory('bi', this)">
-        Business Intelligence
-    </button>
-    <button class="category-btn" onclick="showCategory('erp', this)">
-        ERP Solutions
-    </button>
-    <button class="category-btn" onclick="showCategory('automation', this)">
-        Automation Tools
-    </button>
-    <button class="category-btn" onclick="showCategory('apps', this)">
-        Custom Applications
-    </button>
-</div>
+  <div class="category-container">
+      <button class="category-btn active" onclick="showCategory('bi', this)">
+          Business Intelligence
+      </button>
+      <button class="category-btn" onclick="showCategory('erp', this)">
+          ERP Solutions
+      </button>
+      <button class="category-btn" onclick="showCategory('automation', this)">
+          Automation Tools
+      </button>
+      <button class="category-btn" onclick="showCategory('apps', this)">
+          Custom Applications
+      </button>
+  </div>
 
 <!-- Business Intelligence -->
 <div id="bi" class="service-container">
@@ -832,16 +811,15 @@
     
             <h3 class="fw-bold fs-2 mb-3">Empowering Businesses with Data & Automation</h3>
             <p>
-              We specialize in transforming raw data into actionable insights with Power BI, Tableau, PowerApps, and AppSheet solutions. Our expertise in data visualization, automation, and business intelligence has helped companies make data-driven decisions efficiently.
+              We specialize in transforming raw data into actionable insights through Power BI, Tableau, PowerApps, AppSheet, and Flutter applications. Our expertise spans data visualization, workflow automation, custom ERP systems (ERPNext), and modern web development. At What The Data, we empower businesses to make smarter decisions, streamline operations, and achieve scalable digital transformation.
             </p>
-    
             <div class="row gy-4">
     
               <div class="col-lg-6">
                 <div class="stats-item d-flex">
                   <i class="bi bi-emoji-smile flex-shrink-0"></i>
                   <div>
-                    <span data-purecounter-start="0" data-purecounter-end="7" data-purecounter-duration="1" class="purecounter"></span>
+                    <span data-purecounter-start="0" data-purecounter-end="10" data-purecounter-duration="1" class="purecounter"></span>
                     <p><strong>Happy Clients</strong> <span>across multiple industries</span></p>
                   </div>
                 </div>
@@ -851,7 +829,7 @@
                 <div class="stats-item d-flex">
                   <i class="bi bi-journal-richtext flex-shrink-0"></i>
                   <div>
-                    <span data-purecounter-start="0" data-purecounter-end="9" data-purecounter-duration="1" class="purecounter"></span>
+                    <span data-purecounter-start="0" data-purecounter-end="13" data-purecounter-duration="1" class="purecounter"></span>
                     <p><strong>Projects Completed</strong> <span>in Business Intelligence & Automation</span></p>
                   </div>
                 </div>
@@ -861,7 +839,7 @@
                 <div class="stats-item d-flex">
                   <i class="bi bi-headset flex-shrink-0"></i>
                   <div>
-                    <span data-purecounter-start="0" data-purecounter-end="130" data-purecounter-duration="1" class="purecounter"></span>
+                    <span data-purecounter-start="0" data-purecounter-end="300" data-purecounter-duration="1" class="purecounter"></span>
                     <p><strong>Hours of Support</strong> <span>provided to clients</span></p>
                   </div>
                 </div>
@@ -871,7 +849,7 @@
                 <div class="stats-item d-flex">
                   <i class="bi bi-people flex-shrink-0"></i>
                   <div>
-                    <span data-purecounter-start="0" data-purecounter-end="3" data-purecounter-duration="1" class="purecounter"></span>
+                    <span data-purecounter-start="0" data-purecounter-end="4" data-purecounter-duration="1" class="purecounter"></span>
                     <p><strong>Team Members</strong> <span>growing into a consultancy</span></p>
                   </div>
                 </div>
@@ -977,12 +955,14 @@
           <div class="col-lg-2 col-md-3 footer-links">
             <h4>Our Services</h4>
             <ul>
-              <li><i class="bi bi-chevron-right"></i> <a href="service-details-dashboard.html"> Dashboard Development & Data Visualization</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="service-details-automation.html"> Business Process Automation</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="service-details-data_cleaning.html"> Data Cleaning & Transformation</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="service-details-google_workspace.html"> Google Workspace & App Script Development</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="service-details-dashboard.html">Dashboard Development</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="service-details-automation.html">Business Automation</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="service-details-erp.html">Custom ERP Development</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="service-details-apps.html">App Development</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="service-details-web.html">Web Development</a></li>
             </ul>
           </div>
+
 
           <div class="col-lg-4 col-md-12 footer-newsletter">
             <h4>Our Newsletter</h4>
