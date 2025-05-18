@@ -119,61 +119,72 @@
     </div>
   </div>
 
-  <section class="py-16 bg-gray-100">
-    <div class="max-w-6xl mx-auto px-6">
-      <div class="grid md:grid-cols-3 gap-10">
+<!-- Add this in your <head> if not already added -->
+<script src="https://unpkg.com/lucide@latest"></script>
 
-        <!-- Flutter -->
-        <div class="bg-white rounded-2xl shadow-lg p-6 text-center">
-          <img src="/images/flutter-icon.png" alt="Flutter" class="w-20 h-20 mx-auto mb-4">
-          <h3 class="text-xl font-semibold mb-2">Flutter Development</h3>
-          <p class="text-gray-600 mb-4">Build fast and beautiful apps for Android and iOS using a single codebase.</p>
-          <a href="#" class="inline-block bg-yellow-500 text-white px-4 py-2 rounded-full hover:bg-black transition">Learn More</a>
+<section class="py-16 bg-gray-100">
+  <div class="max-w-6xl mx-auto px-6">
+    <div class="grid md:grid-cols-3 gap-6">
+
+      <!-- Card Template -->
+      <div class="rounded-3xl p-6 bg-gradient-to-br from-blue-50 to-white shadow-md flex flex-col items-center text-center h-full">
+        <div class="bg-blue-100 p-3 rounded-full mb-4">
+          <i data-lucide="smartphone" class="w-6 h-6 text-blue-600"></i>
         </div>
-
-        <!-- Power Apps -->
-        <div class="bg-white rounded-2xl shadow-lg p-6 text-center">
-          <img src="/images/powerapps-icon.png" alt="Power Apps" class="w-20 h-20 mx-auto mb-4">
-          <h3 class="text-xl font-semibold mb-2">Microsoft Power Apps</h3>
-          <p class="text-gray-600 mb-4">Create enterprise-grade low-code apps that boost productivity across teams.</p>
-          <a href="#" class="inline-block bg-yellow-500 text-white px-4 py-2 rounded-full hover:bg-black transition">Learn More</a>
-        </div>
-
-        <!-- AppSheet -->
-        <div class="bg-white rounded-2xl shadow-lg p-6 text-center">
-          <img src="/images/appsheet-icon.png" alt="AppSheet" class="w-20 h-20 mx-auto mb-4">
-          <h3 class="text-xl font-semibold mb-2">Google AppSheet</h3>
-          <p class="text-gray-600 mb-4">Build custom mobile apps directly from Google Sheets and other data sources.</p>
-          <a href="#" class="inline-block bg-yellow-500 text-white px-4 py-2 rounded-full hover:bg-black transition">Learn More</a>
-        </div>
-
-        <!-- React Native -->
-        <div class="bg-white rounded-2xl shadow-lg p-6 text-center">
-          <img src="/images/react-native-icon.png" alt="React Native" class="w-20 h-20 mx-auto mb-4">
-          <h3 class="text-xl font-semibold mb-2">React Native</h3>
-          <p class="text-gray-600 mb-4">Deliver performant and rich user experiences with React Native apps.</p>
-          <a href="#" class="inline-block bg-yellow-500 text-white px-4 py-2 rounded-full hover:bg-black transition">Learn More</a>
-        </div>
-
-        <!-- Custom Web Apps -->
-        <div class="bg-white rounded-2xl shadow-lg p-6 text-center">
-          <img src="/images/webapp-icon.png" alt="Web Apps" class="w-20 h-20 mx-auto mb-4">
-          <h3 class="text-xl font-semibold mb-2">Custom Web Applications</h3>
-          <p class="text-gray-600 mb-4">Responsive and robust web apps tailored to your business processes and goals.</p>
-          <a href="#" class="inline-block bg-yellow-500 text-white px-4 py-2 rounded-full hover:bg-black transition">Learn More</a>
-        </div>
-
-        <!-- Mobile + Web Integration -->
-        <div class="bg-white rounded-2xl shadow-lg p-6 text-center">
-          <img src="/images/integration-icon.png" alt="Integration" class="w-20 h-20 mx-auto mb-4">
-          <h3 class="text-xl font-semibold mb-2">Mobile + Web Integration</h3>
-          <p class="text-gray-600 mb-4">Unified experience between mobile and web platforms to keep your operations seamless.</p>
-          <a href="#" class="inline-block bg-yellow-500 text-white px-4 py-2 rounded-full hover:bg-black transition">Learn More</a>
-        </div>
-
+        <h4 class="text-lg font-semibold text-gray-800 mb-2">Flutter Development</h4>
+        <p class="text-sm text-gray-600">Build fast and beautiful apps for Android and iOS using a single codebase.</p>
       </div>
+
+      <div class="rounded-3xl p-6 bg-gradient-to-br from-violet-50 to-white shadow-md flex flex-col items-center text-center h-full">
+        <div class="bg-violet-100 p-3 rounded-full mb-4">
+          <i data-lucide="app-window" class="w-6 h-6 text-violet-600"></i>
+        </div>
+        <h4 class="text-lg font-semibold text-gray-800 mb-2">Microsoft Power Apps</h4>
+        <p class="text-sm text-gray-600">Create enterprise-grade low-code apps that boost productivity across teams.</p>
+      </div>
+
+      <div class="rounded-3xl p-6 bg-gradient-to-br from-pink-50 to-white shadow-md flex flex-col items-center text-center h-full">
+        <div class="bg-pink-100 p-3 rounded-full mb-4">
+          <i data-lucide="grid" class="w-6 h-6 text-pink-600"></i>
+        </div>
+        <h4 class="text-lg font-semibold text-gray-800 mb-2">Google AppSheet</h4>
+        <p class="text-sm text-gray-600">Build custom mobile apps directly from Google Sheets and other data sources.</p>
+      </div>
+
+      <div class="rounded-3xl p-6 bg-gradient-to-br from-yellow-50 to-white shadow-md flex flex-col items-center text-center h-full">
+        <div class="bg-yellow-100 p-3 rounded-full mb-4">
+          <i data-lucide="activity-square" class="w-6 h-6 text-yellow-600"></i>
+        </div>
+        <h4 class="text-lg font-semibold text-gray-800 mb-2">React Native</h4>
+        <p class="text-sm text-gray-600">Deliver performant and rich user experiences with React Native apps.</p>
+      </div>
+
+      <div class="rounded-3xl p-6 bg-gradient-to-br from-green-50 to-white shadow-md flex flex-col items-center text-center h-full">
+        <div class="bg-green-100 p-3 rounded-full mb-4">
+          <i data-lucide="globe" class="w-6 h-6 text-green-600"></i>
+        </div>
+        <h4 class="text-lg font-semibold text-gray-800 mb-2">Custom Web Applications</h4>
+        <p class="text-sm text-gray-600">Responsive and robust web apps tailored to your business processes and goals.</p>
+      </div>
+
+      <div class="rounded-3xl p-6 bg-gradient-to-br from-indigo-50 to-white shadow-md flex flex-col items-center text-center h-full">
+        <div class="bg-indigo-100 p-3 rounded-full mb-4">
+          <i data-lucide="layers" class="w-6 h-6 text-indigo-600"></i>
+        </div>
+        <h4 class="text-lg font-semibold text-gray-800 mb-2">Mobile + Web Integration</h4>
+        <p class="text-sm text-gray-600">Unified experience between mobile and web platforms to keep your operations seamless.</p>
+      </div>
+
     </div>
-  </section>
+  </div>
+</section>
+
+<script>
+  lucide.createIcons(); // Renders Lucide icons after page load
+</script>
+
+
+
 
 
 <div class="bg-white py-16 px-6 md:px-20">

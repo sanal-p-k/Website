@@ -126,61 +126,78 @@
   </div>
 
   <!-- ERP Services Section -->
-  <section class="py-16 bg-gray-100">
-    <div class="max-w-6xl mx-auto px-6">
-      <div class="grid md:grid-cols-3 gap-10">
+  <!-- Include Lucide icons if not already in your <head> -->
+<!-- Add this in your <head> if not already added -->
+<script src="https://unpkg.com/lucide@latest"></script>
 
-        <!-- ERP Custom Modules -->
-        <div class="bg-white rounded-2xl shadow-lg p-6 text-center">
-          <img src="/images/modules-icon.png" alt="Custom Modules" class="w-20 h-20 mx-auto mb-4">
-          <h3 class="text-xl font-semibold mb-2">Custom ERP Modules</h3>
-          <p class="text-gray-600 mb-4">Tailor-made modules for finance, HR, inventory, CRM, and more—designed for your workflow.</p>
-          <a href="#" class="inline-block bg-yellow-500 text-white px-4 py-2 rounded-full hover:bg-black transition">Learn More</a>
+<section class="py-16 bg-gray-100">
+  <div class="max-w-6xl mx-auto px-6">
+    <div class="grid md:grid-cols-3 gap-6">
+
+      <!-- Custom ERP Modules -->
+      <div class="rounded-3xl p-6 bg-gradient-to-br from-yellow-50 to-white shadow-md flex flex-col items-center text-center h-full">
+        <div class="bg-yellow-100 p-3 rounded-full mb-4">
+          <i data-lucide="settings" class="w-6 h-6 text-yellow-600"></i>
         </div>
-
-        <!-- ERPNext Development -->
-        <div class="bg-white rounded-2xl shadow-lg p-6 text-center">
-          <img src="/images/erpnext-icon.png" alt="ERPNext" class="w-20 h-20 mx-auto mb-4">
-          <h3 class="text-xl font-semibold mb-2">ERPNext Implementation</h3>
-          <p class="text-gray-600 mb-4">Open-source ERPNext deployment and customization for growing businesses.</p>
-          <a href="#" class="inline-block bg-yellow-500 text-white px-4 py-2 rounded-full hover:bg-black transition">Learn More</a>
-        </div>
-
-        <!-- Full ERP Stack -->
-        <div class="bg-white rounded-2xl shadow-lg p-6 text-center">
-          <img src="/images/full-erp-icon.png" alt="Full ERP" class="w-20 h-20 mx-auto mb-4">
-          <h3 class="text-xl font-semibold mb-2">Full ERP Solutions</h3>
-          <p class="text-gray-600 mb-4">Comprehensive ERP development, hosting, and support with modular architecture.</p>
-          <a href="#" class="inline-block bg-yellow-500 text-white px-4 py-2 rounded-full hover:bg-black transition">Learn More</a>
-        </div>
-
-        <!-- ERP Integrations -->
-        <div class="bg-white rounded-2xl shadow-lg p-6 text-center">
-          <img src="/images/integration-icon.png" alt="ERP Integration" class="w-20 h-20 mx-auto mb-4">
-          <h3 class="text-xl font-semibold mb-2">Third-Party Integrations</h3>
-          <p class="text-gray-600 mb-4">Seamless integrations with payment gateways, CRMs, analytics tools, and more.</p>
-          <a href="#" class="inline-block bg-yellow-500 text-white px-4 py-2 rounded-full hover:bg-black transition">Learn More</a>
-        </div>
-
-        <!-- Manufacturing & Inventory -->
-        <div class="bg-white rounded-2xl shadow-lg p-6 text-center">
-          <img src="/images/inventory-icon.png" alt="Inventory" class="w-20 h-20 mx-auto mb-4">
-          <h3 class="text-xl font-semibold mb-2">Inventory & Manufacturing</h3>
-          <p class="text-gray-600 mb-4">Real-time inventory tracking and manufacturing workflows to improve productivity.</p>
-          <a href="#" class="inline-block bg-yellow-500 text-white px-4 py-2 rounded-full hover:bg-black transition">Learn More</a>
-        </div>
-
-        <!-- ERP Reporting -->
-        <div class="bg-white rounded-2xl shadow-lg p-6 text-center">
-          <img src="/images/reporting-icon.png" alt="Reporting" class="w-20 h-20 mx-auto mb-4">
-          <h3 class="text-xl font-semibold mb-2">Analytics & Dashboards</h3>
-          <p class="text-gray-600 mb-4">Custom reports, KPIs, and interactive dashboards for better business decisions.</p>
-          <a href="#" class="inline-block bg-yellow-500 text-white px-4 py-2 rounded-full hover:bg-black transition">Learn More</a>
-        </div>
-
+        <h4 class="text-lg font-semibold text-gray-800 mb-2">Custom ERP Modules</h4>
+        <p class="text-sm text-gray-600 max-w-[280px]">Tailor-made modules for finance, HR, inventory, CRM, and more—designed for your workflow.</p>
       </div>
+
+      <!-- ERPNext Implementation -->
+      <div class="rounded-3xl p-6 bg-gradient-to-br from-blue-50 to-white shadow-md flex flex-col items-center text-center h-full">
+        <div class="bg-blue-100 p-3 rounded-full mb-4">
+          <i data-lucide="package" class="w-6 h-6 text-blue-600"></i>
+        </div>
+        <h4 class="text-lg font-semibold text-gray-800 mb-2">ERPNext Implementation</h4>
+        <p class="text-sm text-gray-600 max-w-[280px]">Open-source ERPNext deployment and customization for growing businesses.</p>
+      </div>
+
+      <!-- Full ERP Solutions -->
+      <div class="rounded-3xl p-6 bg-gradient-to-br from-violet-50 to-white shadow-md flex flex-col items-center text-center h-full">
+        <div class="bg-violet-100 p-3 rounded-full mb-4">
+          <i data-lucide="server" class="w-6 h-6 text-violet-600"></i>
+        </div>
+        <h4 class="text-lg font-semibold text-gray-800 mb-2">Full ERP Solutions</h4>
+        <p class="text-sm text-gray-600 max-w-[280px]">Comprehensive ERP development, hosting, and support with modular architecture.</p>
+      </div>
+
+      <!-- Third-Party Integrations -->
+      <div class="rounded-3xl p-6 bg-gradient-to-br from-green-50 to-white shadow-md flex flex-col items-center text-center h-full">
+        <div class="bg-green-100 p-3 rounded-full mb-4">
+          <i data-lucide="plug" class="w-6 h-6 text-green-600"></i>
+        </div>
+        <h4 class="text-lg font-semibold text-gray-800 mb-2">Third-Party Integrations</h4>
+        <p class="text-sm text-gray-600 max-w-[280px]">Seamless integrations with payment gateways, CRMs, analytics tools, and more.</p>
+      </div>
+
+      <!-- Inventory & Manufacturing -->
+      <div class="rounded-3xl p-6 bg-gradient-to-br from-pink-50 to-white shadow-md flex flex-col items-center text-center h-full">
+        <div class="bg-pink-100 p-3 rounded-full mb-4">
+          <i data-lucide="boxes" class="w-6 h-6 text-pink-600"></i>
+        </div>
+        <h4 class="text-lg font-semibold text-gray-800 mb-2">Inventory & Manufacturing</h4>
+        <p class="text-sm text-gray-600 max-w-[280px]">Real-time inventory tracking and manufacturing workflows to improve productivity.</p>
+      </div>
+
+      <!-- Analytics & Dashboards -->
+      <div class="rounded-3xl p-6 bg-gradient-to-br from-indigo-50 to-white shadow-md flex flex-col items-center text-center h-full">
+        <div class="bg-indigo-100 p-3 rounded-full mb-4">
+          <i data-lucide="bar-chart-3" class="w-6 h-6 text-indigo-600"></i>
+        </div>
+        <h4 class="text-lg font-semibold text-gray-800 mb-2">Analytics & Dashboards</h4>
+        <p class="text-sm text-gray-600 max-w-[280px]">Custom reports, KPIs, and interactive dashboards for better business decisions.</p>
+      </div>
+
     </div>
-  </section>
+  </div>
+</section>
+
+<script>
+  lucide.createIcons();
+</script>
+
+
+
 
   <!-- Key Benefits Section -->
   <div class="bg-white py-16 px-6 md:px-20">

@@ -123,61 +123,76 @@
   </div>
 
 
-  <section class="py-16 bg-gray-100">
+  <!-- Add this in your <head> if not already added -->
+<script src="https://unpkg.com/lucide@latest"></script>
+
+<section class="py-16 bg-gray-100">
   <div class="max-w-6xl mx-auto px-6">
-    <div class="grid md:grid-cols-3 gap-10">
+    <div class="grid md:grid-cols-3 gap-6">
 
-      <!-- Custom Websites -->
-      <div class="bg-white rounded-2xl shadow-lg p-6 text-center">
-        <img src="/images/web-design-icon.png" alt="Custom Websites" class="w-20 h-20 mx-auto mb-4">
-        <h3 class="text-xl font-semibold mb-2">Custom Website Design</h3>
-        <p class="text-gray-600 mb-4">Clean, modern, and branded designs tailored for your business identity and goals.</p>
-        <a href="#" class="inline-block bg-yellow-500 text-white px-4 py-2 rounded-full hover:bg-black transition">Learn More</a>
+      <!-- Custom Website Design -->
+      <div class="rounded-3xl p-6 bg-gradient-to-br from-yellow-50 to-white shadow-md flex flex-col items-center text-center h-full">
+        <div class="bg-yellow-100 p-3 rounded-full mb-4">
+          <i data-lucide="monitor" class="w-6 h-6 text-yellow-600"></i>
+        </div>
+        <h4 class="text-lg font-semibold text-gray-800 mb-2">Custom Website Design</h4>
+        <p class="text-sm text-gray-600">Clean, modern, and branded designs tailored for your business identity and goals.</p>
       </div>
 
-      <!-- React Development -->
-      <div class="bg-white rounded-2xl shadow-lg p-6 text-center">
-        <img src="/images/react-icon.png" alt="React JS" class="w-20 h-20 mx-auto mb-4">
-        <h3 class="text-xl font-semibold mb-2">React.js Development</h3>
-        <p class="text-gray-600 mb-4">Fast and interactive front-end development using modern JavaScript frameworks.</p>
-        <a href="#" class="inline-block bg-yellow-500 text-white px-4 py-2 rounded-full hover:bg-black transition">Learn More</a>
+      <!-- React.js Development -->
+      <div class="rounded-3xl p-6 bg-gradient-to-br from-blue-50 to-white shadow-md flex flex-col items-center text-center h-full">
+        <div class="bg-blue-100 p-3 rounded-full mb-4">
+          <i data-lucide="react" class="w-6 h-6 text-blue-600"></i>
+        </div>
+        <h4 class="text-lg font-semibold text-gray-800 mb-2">React.js Development</h4>
+        <p class="text-sm text-gray-600">Fast and interactive front-end development using modern JavaScript frameworks.</p>
       </div>
 
-      <!-- Full Stack Web -->
-      <div class="bg-white rounded-2xl shadow-lg p-6 text-center">
-        <img src="/images/fullstack-icon.png" alt="Full Stack" class="w-20 h-20 mx-auto mb-4">
-        <h3 class="text-xl font-semibold mb-2">Full-Stack Web Solutions</h3>
-        <p class="text-gray-600 mb-4">End-to-end web development using Node.js, Express, MongoDB, and modern frontends.</p>
-        <a href="#" class="inline-block bg-yellow-500 text-white px-4 py-2 rounded-full hover:bg-black transition">Learn More</a>
+      <!-- Full-Stack Web Solutions -->
+      <div class="rounded-3xl p-6 bg-gradient-to-br from-violet-50 to-white shadow-md flex flex-col items-center text-center h-full">
+        <div class="bg-violet-100 p-3 rounded-full mb-4">
+          <i data-lucide="layers" class="w-6 h-6 text-violet-600"></i>
+        </div>
+        <h4 class="text-lg font-semibold text-gray-800 mb-2">Full-Stack Web Solutions</h4>
+        <p class="text-sm text-gray-600">End-to-end web development using Node.js, Express, MongoDB, and modern frontends.</p>
       </div>
 
-      <!-- CMS Websites -->
-      <div class="bg-white rounded-2xl shadow-lg p-6 text-center">
-        <img src="/images/cms-icon.png" alt="CMS" class="w-20 h-20 mx-auto mb-4">
-        <h3 class="text-xl font-semibold mb-2">CMS & No-Code Sites</h3>
-        <p class="text-gray-600 mb-4">Easy-to-manage websites built with WordPress, Webflow, or other no-code platforms.</p>
-        <a href="#" class="inline-block bg-yellow-500 text-white px-4 py-2 rounded-full hover:bg-black transition">Learn More</a>
+      <!-- CMS & No-Code Sites -->
+      <div class="rounded-3xl p-6 bg-gradient-to-br from-green-50 to-white shadow-md flex flex-col items-center text-center h-full">
+        <div class="bg-green-100 p-3 rounded-full mb-4">
+          <i data-lucide="code" class="w-6 h-6 text-green-600"></i>
+        </div>
+        <h4 class="text-lg font-semibold text-gray-800 mb-2">CMS & No-Code Sites</h4>
+        <p class="text-sm text-gray-600">Easy-to-manage websites built with WordPress, Webflow, or other no-code platforms.</p>
       </div>
 
-      <!-- E-commerce -->
-      <div class="bg-white rounded-2xl shadow-lg p-6 text-center">
-        <img src="/images/ecommerce-icon.png" alt="Ecommerce" class="w-20 h-20 mx-auto mb-4">
-        <h3 class="text-xl font-semibold mb-2">E-commerce Platforms</h3>
-        <p class="text-gray-600 mb-4">Launch secure, scalable online stores with custom shopping experiences.</p>
-        <a href="#" class="inline-block bg-yellow-500 text-white px-4 py-2 rounded-full hover:bg-black transition">Learn More</a>
+      <!-- E-commerce Platforms -->
+      <div class="rounded-3xl p-6 bg-gradient-to-br from-pink-50 to-white shadow-md flex flex-col items-center text-center h-full">
+        <div class="bg-pink-100 p-3 rounded-full mb-4">
+          <i data-lucide="shopping-cart" class="w-6 h-6 text-pink-600"></i>
+        </div>
+        <h4 class="text-lg font-semibold text-gray-800 mb-2">E-commerce Platforms</h4>
+        <p class="text-sm text-gray-600">Launch secure, scalable online stores with custom shopping experiences.</p>
       </div>
 
-      <!-- Web App Integration -->
-      <div class="bg-white rounded-2xl shadow-lg p-6 text-center">
-        <img src="/images/api-icon.png" alt="API Integration" class="w-20 h-20 mx-auto mb-4">
-        <h3 class="text-xl font-semibold mb-2">Third-Party Integrations</h3>
-        <p class="text-gray-600 mb-4">Connect your site with APIs, payment gateways, CRMs, and business tools effortlessly.</p>
-        <a href="#" class="inline-block bg-yellow-500 text-white px-4 py-2 rounded-full hover:bg-black transition">Learn More</a>
+      <!-- Third-Party Integrations -->
+      <div class="rounded-3xl p-6 bg-gradient-to-br from-indigo-50 to-white shadow-md flex flex-col items-center text-center h-full">
+        <div class="bg-indigo-100 p-3 rounded-full mb-4">
+          <i data-lucide="plug" class="w-6 h-6 text-indigo-600"></i>
+        </div>
+        <h4 class="text-lg font-semibold text-gray-800 mb-2">Third-Party Integrations</h4>
+        <p class="text-sm text-gray-600">Connect your site with APIs, payment gateways, CRMs, and business tools effortlessly.</p>
       </div>
 
     </div>
   </div>
 </section>
+
+<script>
+  lucide.createIcons();
+</script>
+
+
 
 
 
