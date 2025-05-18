@@ -2312,31 +2312,35 @@ p {
 }
 
 .faq-question {
-  background: transparent;
-  color: #ffffff;
-  font-size: 1.3rem;
-  width: 100%;
-  text-align: left;
-  padding: 15px 20px;
+  background: none;
   border: none;
-  outline: none;
-  cursor: pointer;
-  transition: all 0.3s ease;
+  width: 100%;
+  text-align: left;  /* center the question text */
+  padding: 15px 30px;
+  font-size: 1.1rem;
+  font-weight: bold;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: left; /* center content */
+  align-items: left;
+  cursor: pointer;
+  box-sizing: border-box;
+  position: relative;
 }
+
+.faq-toggle {
+  position: absolute;
+  right: 30px;  /* position toggle on right */
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #FFD700;
+  transition: transform 0.3s ease;
+}
+
 
 .faq-question:hover {
   color: #FFD700;  /* Gold color on hover */
 }
 
-.faq-toggle {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #FFD700;  /* Gold color for toggle icon */
-  transition: transform 0.3s ease;
-}
 
 .faq-answer {
   display: none;
@@ -2475,6 +2479,5 @@ p {
   background: #555;       /* Lighter Grey on Hover */
   color: #fff;            /* White Text */
 }
-
 
 
