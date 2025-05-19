@@ -193,57 +193,58 @@
 
     <!-- Right: Numbered List -->
     <div class="flex-1 space-y-12">
-      <!-- Item 1 -->
+  <!-- Item 1: Flutter -->
       <div class="flex items-start gap-6">
         <div class="flex-shrink-0 mt-1">
           <div class="w-10 h-10 rounded-full border border-blue-500 text-blue-600 font-semibold flex items-center justify-center text-lg">1</div>
         </div>
         <div>
-          <h3 class="text-lg font-semibold text-gray-900 mb-2">High Compatibility</h3>
+          <h3 class="text-lg font-semibold text-gray-900 mb-2">Flutter Development</h3>
           <p class="text-gray-700">
-            Flutter widgets are part of the app, not the platform. Hence, you may experience fewer or no compatibility issues on different OS versions, reducing application testing time.
+            Build fast, expressive, and beautiful apps for Android and iOS using a single codebase. Ideal for MVPs and production-grade apps with native performance and a rich UI.
           </p>
         </div>
       </div>
 
-      <!-- Item 2 -->
+      <!-- Item 2: Microsoft Power Apps -->
       <div class="flex items-start gap-6">
         <div class="flex-shrink-0 mt-1">
           <div class="w-10 h-10 rounded-full border border-blue-500 text-blue-600 font-semibold flex items-center justify-center text-lg">2</div>
         </div>
         <div>
-          <h3 class="text-lg font-semibold text-gray-900 mb-2">Fast Development</h3>
+          <h3 class="text-lg font-semibold text-gray-900 mb-2">Microsoft Power Apps</h3>
           <p class="text-gray-700">
-            The hot reload feature allows for faster app development. This feature allows users to view the changes made in the code instantly on emulators and simulators. While the app is still running, the changed code is reloaded within less than a second, so there is no need to restart.
+            Quickly build low-code apps that digitize and automate business processes. Seamless integration with Microsoft 365, SharePoint, and Dataverse makes it enterprise-ready.
           </p>
         </div>
       </div>
 
-      <!-- Item 3 -->
+      <!-- Item 3: Google AppSheet -->
       <div class="flex items-start gap-6">
         <div class="flex-shrink-0 mt-1">
           <div class="w-10 h-10 rounded-full border border-blue-500 text-blue-600 font-semibold flex items-center justify-center text-lg">3</div>
         </div>
         <div>
-          <h3 class="text-lg font-semibold text-gray-900 mb-2">Performance</h3>
+          <h3 class="text-lg font-semibold text-gray-900 mb-2">Google AppSheet</h3>
           <p class="text-gray-700">
-            Flutter compiles directly to native code and provides near-native performance comparable to platform-specific apps. Flutter and Google Firebase work collaboratively to develop high-performing mobile apps in record time.
+            Turn your Google Sheets or Excel files into powerful mobile apps with no code. Ideal for internal tools, field tracking, inventory management, and more.
           </p>
         </div>
       </div>
 
-      <!-- Item 4 -->
+      <!-- Item 4: React Native -->
       <div class="flex items-start gap-6">
         <div class="flex-shrink-0 mt-1">
           <div class="w-10 h-10 rounded-full border border-blue-500 text-blue-600 font-semibold flex items-center justify-center text-lg">4</div>
         </div>
         <div>
-          <h3 class="text-lg font-semibold text-gray-900 mb-2">Single UI and Business Logic</h3>
+          <h3 class="text-lg font-semibold text-gray-900 mb-2">React Native</h3>
           <p class="text-gray-700">
-            Flutter does not rely on platform-specific UI components to render the UI, so the UI delivered is consistent across platforms. Sharing UI and business logic can save developers time, effort, and health.
+            Leverage the power of JavaScript to build cross-platform apps with native look and feel. Trusted by brands like Facebook and Instagram for robust app experiences.
           </p>
         </div>
       </div>
+
     </div>
   </div>
 </div>
@@ -285,9 +286,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 40px;
+    gap: 60px;
     flex-wrap: wrap;
     padding: 50px 20px;
+  }
+
+  .example-work.reverse {
+  flex-direction: row-reverse;
   }
 
   .description {
@@ -376,6 +381,41 @@
     <img src="assets/img/iphone-frame.png" alt="iPhone Frame" class="phone-frame" />
   </div>
 </section>
+
+
+
+
+<section class="example-work reverse">
+  <div class="description">
+    <h2 class="section-title">TutorLink – Smart Scheduling for Personalized Learning</h2>
+    <p>
+      TutorLink is a streamlined scheduling and class management platform built for tuition centres and one-on-one institutions. 
+      Designed with both educators and students in mind, the app bridges the gap between availability and learning needs.
+    </p>
+    <p>
+      Key features include teacher availability tracking, smart class assignments, and centralized access to study materials. 
+      With dedicated views for teachers, managers, and students, TutorLink ensures seamless coordination and communication across the board.
+    </p>
+    <p>
+      Whether managing a growing institute or scaling freelance teaching, TutorLink brings clarity, control, and efficiency to academic operations.
+    </p>
+  </div>
+
+  <div class="phone-preview">
+    <!-- Screenshot Slider -->
+    <div class="swiper swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="assets\img\portfolio\hr-appsheet\home-hr.png" alt="Screenshot 1" /></div>
+        <div class="swiper-slide"><img src="assets\img\portfolio\hr-appsheet\nav-bar.png" alt="Screenshot 2" /></div>
+        <div class="swiper-slide"><img src="assets\img\portfolio\hr-appsheet\form-hr.png" alt="Screenshot 3" /></div>
+      </div>
+    </div>
+
+    <!-- iPhone Frame PNG on Top -->
+    <img src="assets/img/iphone-frame.png" alt="iPhone Frame" class="phone-frame" />
+  </div>
+</section>
+
 
 <!-- Swiper JS -->
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
